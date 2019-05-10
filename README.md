@@ -6,6 +6,9 @@ ReactJS: Aplicación de Noticias con REST API
 ### 'prop-types'
 '> npm install --save-dev prop-types'
 
+### 'react-transition-group'
+'> npm install --save-dev react-transition-group'
+
 ## API: News API
 
 url= https://newsapi.org/v2/top-headlines?country=${pais}&category=${categoria}&apiKey=

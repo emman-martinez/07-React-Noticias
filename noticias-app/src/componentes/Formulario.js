@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 class Formulario extends Component {
 
     categoriaRef = React.createRef();
+    paisRef = React.createRef();
 
     cambiarCategoria = (e) => {
         e.preventDefault();
         // console.log(this.categoriaRef.current.value);
 
         // ***** Enviar por props
-        this.props.consultarNoticias(this.categoriaRef.current.value);
+        this.props.consultarNoticias(this.categoriaRef.current.value, this.paisRef.current.value);
 
     }
 
@@ -29,6 +30,17 @@ class Formulario extends Component {
                                 <option value="science">Ciencia</option>
                                 <option value="sports">Deportes</option>
                                 <option value="technology">Tecnología</option>
+                            </select>
+                        </div>
+                        <div className="input-field col s12 m8">
+                            <select ref={this.paisRef} name="" id="">
+                                <option value="mx" defaultValue>México</option>
+                                <option value="us">Estados Unidos</option>
+                                <option value="ar">Argentina</option>
+                                <option value="co">Colombia</option>
+                                <option value="ch">Chile</option>
+                                <option value="ve">Venezuela</option>
+                                <option value="br">Brasil</option>
                             </select>
                         </div>
                         <div className="input-field col s12 m4 enviar">

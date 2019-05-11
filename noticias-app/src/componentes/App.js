@@ -16,8 +16,8 @@ class App extends Component {
     this.consultarNoticias();
   }
 
-  consultarNoticias = (categoria = 'general') => {
-    const pais = 'mx';
+  consultarNoticias = (categoria = 'general', pais = 'mx') => {
+    // console.log(pais);
     // console.log(categoria);
     let url = `https://newsapi.org/v2/top-headlines?country=${pais}&category=${categoria}&apiKey=36ab97c3f38b4a879b7259e94b29843e`;
     // console.log(url); 

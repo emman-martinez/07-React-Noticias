@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
-    "react-transition-group": "^4.0.1"
+    "react-transition-group": "^4.2.1"
   }
 }
